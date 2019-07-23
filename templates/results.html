@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> Flask IMDB Search </title>
+  </head>
+  <body>
+    <h2> Flask IMDB Search!!! </h2>
+    {%from "_formhelpers.html" import render_field%}
+    <form method=post>
+      <dl>
+        {{render_field(form.select)}}
+        <p>
+        {{render_field(form.search)}}
+      </dl>
+      <input type=submit value=Search>
+    </form>
+
+    <br>
+    <hr/>
+    <br>
+    <h3> Movies </h3>
+    <ul>
+      {% for item in movies %}
+        <li>{{item}}</li>
+      {%endfor%}
+    </ul>
+
+
+
+  </body>
+</html>
