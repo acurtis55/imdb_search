@@ -36,3 +36,9 @@ class IMDBClient:
         print("Searching by title: ", title)
         searchUrl = self.url + "title=" + title
         return self.__getMovies__(searchUrl)
+
+    def searchByGenre(self, genre):
+
+        print("Searching by genre: ", genre)
+        searchUrl = self.url + "genres=" + genre
+        return self.__getMovies__(searchUrl)
