@@ -26,8 +26,9 @@ click==6.7
 cloudpickle==0.5.3
 clyent==1.2.2
 colorama==0.3.9
-conda==4.6.14
+conda==4.7.10
 conda-build==3.10.5
+conda-package-handling==1.3.11
 conda-verify==2.0.0
 contextlib2==0.5.5
 cryptography==2.2.2
@@ -74,6 +75,7 @@ jupyterlab==0.32.1
 jupyterlab-launcher==0.10.5
 kiwisolver==1.0.1
 lazy-object-proxy==1.3.1
+libarchive-c==2.8
 llvmlite==0.23.1
 locket==0.2.0
 lxml==4.2.1
@@ -172,6 +174,7 @@ terminado==0.8.1
 testpath==0.3.1
 toolz==0.9.0
 tornado==5.0.2
+tqdm==4.32.1
 traitlets==4.3.2
 typing==3.6.4
 unicodecsv==0.14.1
